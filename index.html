@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Globetalk - Travel stories</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <a class="logo" href="#">Globetalk</a>
+
+    <form class="search" role="search">
+      <label for="search-input" class="visually-hidden">Search trips and travellers</label>
+      <input id="search-input" type="search" placeholder="Search places or travellers">
+    </form>
+
+    <nav class="topnav" aria-label="Main">
+      <a href="#" class="active">Home</a>
+      <a href="#">Explore</a>
+      <a href="#">Saved</a>
+      <a href="#" class="btn btn-small">Sign in</a>
+    </nav>
+  </header>
+
+  <div class="layout">
+
+    <!-- Left column: profile -->
+    <aside class="sidebar sidebar-left">
+      <section class="card profile">
+        <div class="avatar avatar-large" aria-hidden="true">R</div>
+        <h2 class="profile-name">Rohit</h2>
+        <p class="profile-bio">Collecting stories from the road.</p>
+        <dl class="profile-stats">
+          <div><dt>Trips</dt><dd>12</dd></div>
+          <div><dt>Followers</dt><dd>248</dd></div>
+          <div><dt>Following</dt><dd>97</dd></div>
+        </dl>
+        <a href="#" class="btn btn-outline btn-block">Edit profile</a>
+      </section>
+    </aside>
+
+    <!-- Centre column: composer and feed -->
+    <main class="feed">
+
+      <section class="card composer" aria-labelledby="composer-title">
+        <h1 id="composer-title" class="composer-title">Share a travel story</h1>
+        <form class="composer-form">
+          <label for="story-text" class="visually-hidden">Your story</label>
+          <textarea id="story-text" rows="3" placeholder="Where did you go and what happened?"></textarea>
+
+          <div class="composer-row">
+            <label for="story-place" class="visually-hidden">Location</label>
+            <input id="story-place" type="text" placeholder="Location, for example Hunza, Pakistan">
+            <button type="button" class="btn btn-outline">Add photo</button>
+            <button type="submit" class="btn">Post story</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Post 1 -->
+      <article class="card post">
+        <header class="post-header">
+          <div class="avatar" aria-hidden="true">A</div>
+          <div class="post-meta">
+            <a href="#" class="post-author">Aisha Khan</a>
+            <span class="post-time">2 hours ago</span>
+          </div>
+          <button type="button" class="btn btn-small btn-outline">Follow</button>
+        </header>
+
+        <div class="post-photo photo-1" role="img" aria-label="Photo placeholder: mountains at sunrise">
+          <span class="place-tag">Hunza Valley, Pakistan</span>
+        </div>
+
+        <div class="post-body">
+          <h3 class="post-title">Sunrise over Attabad Lake</h3>
+          <p>We left the guesthouse at 5 am to catch the first light on the water. Cold hands, worth every minute. Tip: bring a flask of tea and arrive before the tour buses.</p>
+        </div>
+
+        <footer class="post-actions">
+          <button type="button" class="action">Like <span>124</span></button>
+          <button type="button" class="action">Comment <span>18</span></button>
+          <button type="button" class="action">Save</button>
+        </footer>
+      </article>
+
+      <!-- Post 2 -->
+      <article class="card post">
+        <header class="post-header">
+          <div class="avatar" aria-hidden="true">S</div>
+          <div class="post-meta">
+            <a href="#" class="post-author">Sameer Ali</a>
+            <span class="post-time">Yesterday</span>
+          </div>
+          <button type="button" class="btn btn-small btn-outline">Follow</button>
+        </header>
+
+        <div class="post-photo photo-2" role="img" aria-label="Photo placeholder: old city street market">
+          <span class="place-tag">Old Dubai, UAE</span>
+        </div>
+
+        <div class="post-body">
+          <h3 class="post-title">Spice souk on a Friday morning</h3>
+          <p>Took the abra across the creek and walked straight into the spice souk. Saffron and dried limes everywhere. Prices are friendlier if you ask twice.</p>
+        </div>
+
+        <footer class="post-actions">
+          <button type="button" class="action">Like <span>86</span></button>
+          <button type="button" class="action">Comment <span>9</span></button>
+          <button type="button" class="action">Save</button>
+        </footer>
+      </article>
+
+      <!-- Post 3 -->
+      <article class="card post">
+        <header class="post-header">
+          <div class="avatar" aria-hidden="true">M</div>
+          <div class="post-meta">
+            <a href="#" class="post-author">Mariam Raza</a>
+            <span class="post-time">3 days ago</span>
+          </div>
+          <button type="button" class="btn btn-small btn-outline">Follow</button>
+        </header>
+
+        <div class="post-photo photo-3" role="img" aria-label="Photo placeholder: beach at low tide">
+          <span class="place-tag">Kund Malir, Balochistan</span>
+        </div>
+
+        <div class="post-body">
+          <h3 class="post-title">Low tide road trip</h3>
+          <p>Four hours from Karachi along the coastal highway. The beach at low tide is wide and almost empty. We stayed until the sky turned orange.</p>
+        </div>
+
+        <footer class="post-actions">
+          <button type="button" class="action">Like <span>203</span></button>
+          <button type="button" class="action">Comment <span>31</span></button>
+          <button type="button" class="action">Save</button>
+        </footer>
+      </article>
+
+    </main>
+
+    <!-- Right column: suggestions -->
+    <aside class="sidebar sidebar-right">
+      <section class="card">
+        <h2 class="card-title">Travellers to follow</h2>
+        <ul class="people-list">
+          <li>
+            <div class="avatar" aria-hidden="true">Z</div>
+            <div class="people-info">
+              <a href="#">Zara Ahmed</a>
+              <span>Mountain trails</span>
+            </div>
+            <button type="button" class="btn btn-small btn-outline">Follow</button>
+          </li>
+          <li>
+            <div class="avatar" aria-hidden="true">H</div>
+            <div class="people-info">
+              <a href="#">Hamza Noor</a>
+              <span>Street food</span>
+            </div>
+            <button type="button" class="btn btn-small btn-outline">Follow</button>
+          </li>
+          <li>
+            <div class="avatar" aria-hidden="true">L</div>
+            <div class="people-info">
+              <a href="#">Layla Siddiqui</a>
+              <span>Budget backpacking</span>
+            </div>
+            <button type="button" class="btn btn-small btn-outline">Follow</button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2 class="card-title">Popular destinations</h2>
+        <ul class="tag-list">
+          <li><a href="#">Hunza</a></li>
+          <li><a href="#">Istanbul</a></li>
+          <li><a href="#">Skardu</a></li>
+          <li><a href="#">Bali</a></li>
+          <li><a href="#">Cappadocia</a></li>
+          <li><a href="#">Swat</a></li>
+        </ul>
+      </section>
+    </aside>
+
+  </div>
+
+</body>
+</html>
